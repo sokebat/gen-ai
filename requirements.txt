@@ -1,0 +1,8 @@
+streamlit
+requests
+beautifulsoup4
+faiss-cpu
+python-dotenv
+langchain-google-genai
+langchain-community
+langchain-classic
