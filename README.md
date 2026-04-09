@@ -37,7 +37,7 @@ python -m venv .venv
 Activate it:
 
 ```powershell
-.\.venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate 
 ```
 
 Upgrade pip and install dependencies:
@@ -47,14 +47,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### One-command setup
-
-You can also use the included PowerShell helper:
-
-```powershell
-.\setup_venv.ps1
-```
-
+ 
 ## Environment Variables
 
 Copy `.env.example` to `.env` and add your Gemini API key:
