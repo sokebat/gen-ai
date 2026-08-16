@@ -1,8 +1,9 @@
-streamlit
-requests
-beautifulsoup4
-faiss-cpu
 python-dotenv
+pydantic
+dompruner
 langchain-google-genai
-langchain-community
+langchain-chroma
 langchain-classic
+langchain-text-splitters
+jupyter
+ipykernel

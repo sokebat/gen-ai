@@ -1,4 +1,9 @@
 .venv/
 __pycache__/
+*.pyc
 .env
-.streamlit/
+.ipynb_checkpoints/
+
+# Local vector store persistence (only created if a project sets persist_directory)
+.chroma/
+chroma.sqlite3
