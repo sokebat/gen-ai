@@ -1,11 +1,13 @@
 python-dotenv
 pydantic
 dompruner
-langchain-pymupdf4llm
+langchain-community
+pypdf
 langchain-google-genai
 langchain-chroma
 langchain-classic
 langchain-text-splitters
+langchain-tavily
 langgraph
 jupyter
 ipykernel
