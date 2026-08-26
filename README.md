@@ -9,7 +9,9 @@ This repo holds one shared Python environment (`.venv`, `.env`, `requirements.tx
 ├── .env.example           # template for .env
 ├── requirements.txt       # shared Python dependencies for all projects
 ├── README.md
-└── <project name>/               # project: reads a public web page, answers questions about it
+├── 01_web-rag/             # project: reads a public web page, answers questions about it
+├── 02_corrective-rag/      # project: RAG with retrieval grading and web-search fallback
+└── 03_simple_agent/        # project: minimal ReAct agent with web search + weather tools
 ```
 
 ## 1. Create the Virtual Environment
