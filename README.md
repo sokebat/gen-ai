@@ -1,26 +1,18 @@
-# RAG Projects
+# Gen AI Workspace
 
-This repo holds one shared Python environment (`.venv`, `.env`, `requirements.txt`) used by multiple notebook-based RAG projects, each in its own subfolder.
+A shared Python environment (`.venv`, `.env`, `requirements.txt`) for multiple notebook-based Generative AI projects, organized by topic into subfolders.
 
 ```
 .
-├── .venv/                      # shared virtual environment (not committed)
-├── .env                        # shared Gemini API key (not committed)
-├── .env.example                # template for .env
-├── requirements.txt            # shared Python dependencies for all projects
+├── .venv/                # shared virtual environment (not committed)
+├── .env                  # shared API keys (not committed)
+├── .env.example          # template for .env
+├── requirements.txt      # shared Python dependencies for all projects
 ├── README.md
-├── langgraph/                  # placeholder for an upcoming LangGraph project
-└── rag/
-    ├── 01_web-rag/              # project: reads a public web page, answers questions about it
-    │   ├── rag_notebook.ipynb
-    │   └── 02_corrective-rag/   # project: RAG with retrieval grading and web-search fallback
-    │       ├── README.md
-    │       ├── image/
-    │       └── notebook/
-    └── 03_simple_agent/         # project: minimal ReAct agent with web search + weather tools
-        ├── README.md
-        └── notebook/
+└── <topic>/               # one folder per project area, grouped by topic
 ```
+
+Each subfolder is self-contained and may include its own notebooks, README, and supporting assets (images, data, etc.), but all share the same environment and dependencies defined here.
 
 ## 1. Create the Virtual Environment
 
@@ -51,10 +43,16 @@ pip install -r requirements.txt
 
 ## 3. Set Your Environment Variables
 
-Copy `.env.example` to `.env` (already done for you if you're reading this after setup) and add your Gemini API key:
+Copy `.env.example` to `.env` and fill in your API keys:
 
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
+## 4. Run a Notebook
 
+```bash
+jupyter notebook
+```
+
+Then open the notebook for the project you want to explore under its topic folder.
