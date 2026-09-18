@@ -4,14 +4,22 @@ This repo holds one shared Python environment (`.venv`, `.env`, `requirements.tx
 
 ```
 .
-├── .venv/                 # shared virtual environment (not committed)
-├── .env                   # shared Gemini API key (not committed)
-├── .env.example           # template for .env
-├── requirements.txt       # shared Python dependencies for all projects
+├── .venv/                      # shared virtual environment (not committed)
+├── .env                        # shared Gemini API key (not committed)
+├── .env.example                # template for .env
+├── requirements.txt            # shared Python dependencies for all projects
 ├── README.md
-├── 01_web-rag/             # project: reads a public web page, answers questions about it
-├── 02_corrective-rag/      # project: RAG with retrieval grading and web-search fallback
-└── 03_simple_agent/        # project: minimal ReAct agent with web search + weather tools
+├── langgraph/                  # placeholder for an upcoming LangGraph project
+└── rag/
+    ├── 01_web-rag/              # project: reads a public web page, answers questions about it
+    │   ├── rag_notebook.ipynb
+    │   └── 02_corrective-rag/   # project: RAG with retrieval grading and web-search fallback
+    │       ├── README.md
+    │       ├── image/
+    │       └── notebook/
+    └── 03_simple_agent/         # project: minimal ReAct agent with web search + weather tools
+        ├── README.md
+        └── notebook/
 ```
 
 ## 1. Create the Virtual Environment
